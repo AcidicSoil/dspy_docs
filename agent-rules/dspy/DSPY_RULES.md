@@ -2,6 +2,11 @@
 
 This rulebook consolidates the essential practices from the legacy agent guidelines and expresses them in DSPy-friendly terms.
 
+## Precedence Hierarchy
+- **Global** – organization-wide defaults from repository root.
+- **Project** – rules in this `agent-rules/dspy` directory.
+- **Sub-directory** – component specific guidance stored next to code.
+
 ## Core Development Practices
 - **Issue Analysis** – produce structured specs with summary, problem statement, technical approach, implementation and test plans.
 - **Task Implementation** – evaluate strategies, consider trade‑offs, and outline clear implementation steps.
@@ -16,5 +21,7 @@ When overlapping guidance existed (e.g., multiple commit conventions), the more 
 ## Directory Structure
 - `dspy/` – active DSPy‑aligned rules and modules
 - `legacy-rules/` – original unrefactored rule sets
+
+See `TRACEABILITY.md` for mappings from legacy rules to their DSPy equivalents.
 
 Refer to `architecture.md` for module boundaries and `signatures.py` for formal DSPy signatures.
